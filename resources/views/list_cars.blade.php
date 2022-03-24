@@ -16,30 +16,30 @@
 
                 </select>
 
-                <button class="btn btn-outline-info" type="submit">Keresés</button>
+                <button class="btn-pimary mt-2" type="submit">Keresés</button>
 
             </form>
 
         </div>
 
-        <div class="col-6">
-            <a href="/register">Regisztráció</a>
-            <a href="/login">Bejelentkezés</a>
-            <a href="/logout">Kijelentkezés</a>
+        <div class="col-6 mt-1">
+            <a class="btn btn-outline" href="/register">Regisztráció</a>
+            <a class="btn btn-outline" href="/login">Bejelentkezés</a>
+            <a class="btn btn-outline" href="/logout">Kijelentkezés</a>
         </div>
 
         </div>
 
         <div class="row">
-            <div class="col-8">
-                <table class="table table-stripped">
+            <div class="col-10">
+                <table class="table table-stripped ">
                     <thead>
                         <th scope="col">ID</th>
                         <th scope="col">Rendszám</th>
                         <th scope="col">Márka</th>
                         <th scope="col">Szín</th>
                         <th scope="col">Ár</th>
-                        <th scope="col">Műveletek</th>
+                        <th scope="col" class="text-end">Műveletek</th>
                     </thead>
                     <tbody>
                         
@@ -50,7 +50,7 @@
                                 <td>{{ $car->brand }}</td>
                                 <td>{{ $car->color }}</td>
                                 <td>{{ $car->price }}</td>
-                                    <td>
+                                    <td class="text-end">
                                         <a class="btn btn-outline-primary btn-sm" href="/edit-car/{{ $car->id }}">Szerkesztés</a>
                                         <a class="btn btn-outline-danger btn-sm" href="/delete-car/{{ $car->id }}">Törlés</a>
                                    </td>
@@ -61,7 +61,7 @@
             </div>
 
             <div class="col-2">
-                <a class="btn btn-outline btn-primary" href="/new-car">Új autó</a>
+                <a class="btn btn-primary" href="/new-car">Új autó</a>
             </div>
         </div>
     
