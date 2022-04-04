@@ -5,14 +5,14 @@
 <div class="container">
     <div class="row">
         <div class="col-6">
-            <form action="">
+            <form action="search-car">
                 <select name="color" id="">
 
                 <option selected>Szín</option>
-                <option>Kék</option>
-                <option>Sárga</option>
-                <option>Piros</option>
-                <option></option>
+                <option>kék</option>
+                <option>sárga</option>
+                <option>piros</option>
+                <option>lila</option>
 
                 </select>
 
@@ -22,17 +22,18 @@
 
         </div>
 
-        <div class="col-6 mt-1">
+        <div class="col-6 mt-2">
             <a class="btn btn-outline" href="/register">Regisztráció</a>
             <a class="btn btn-outline" href="/login">Bejelentkezés</a>
             <a class="btn btn-outline" href="/logout">Kijelentkezés</a>
+            <a class="btn btn-outline-primary" href="/new-car">Új autó</a>
         </div>
 
         </div>
 
         <div class="row">
             <div class="col-10">
-                <table class="table table-stripped ">
+                <table class="table table-striped ">
                     <thead>
                         <th scope="col">ID</th>
                         <th scope="col">Rendszám</th>
@@ -61,7 +62,7 @@
             </div>
 
             <div class="col-2">
-                <a class="btn btn-primary" href="/new-car">Új autó</a>
+                <!-- újautó helye volt-->
             </div>
         </div>
     

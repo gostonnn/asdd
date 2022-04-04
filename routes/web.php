@@ -25,6 +25,7 @@ Route::get("/edit-car/{id}", [CarController::class, "edit"])->middleware(['auth'
 Route::post("/update-car", [CarController::class, "update"])->middleware(['auth'])->name('update');
 Route::get("/delete-car/{id}", [CarController::class, "destroy"])->middleware(['auth'])->name('destroy');
 Route::get("/logout", [AuthenticatedSessionController::class, "destroy"])->middleware(['auth'])->name('logout');
+Route::get("/search-car", [CarController::class, "search"])->middleware(['auth'])->name('search');
 
 
 

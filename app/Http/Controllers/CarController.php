@@ -54,6 +54,19 @@ class CarController extends Controller
         return redirect("/");
 
     }
+
+    public function search( Request $request ){
+
+        $cars = Car::where( "color", $request->color )->get();
+        
+        return view("show_car", [
+            "cars" => $cars
+        ]);
+        // echo"<pre>";
+        // print_r($cars);
+
+    }
+
     public function destroy( $id ){
 
         Car::destroy($id);
